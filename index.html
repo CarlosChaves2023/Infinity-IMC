@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+</head>
+<body>
+    <div>
+        <h2>Cálculo do IMC</h2><br>
+        <label for="peso">Peso <input type="number" name="peso" id="peso"></label><br><br>
+        <label for="altura">Altura <input type="number" name="altura" id="altura"></label><br><br>
+        <button id="res" onclick="calculoImc()">Resultado</button>
+
+    </div>
+    
+    <script>
+        function calculoImc(peso, altura){
+            var peso = document.getElementById('peso').value;
+            var altura = document.getElementById('altura').value;
+            var imc = (peso / (altura **2)).toFixed(2);
+            alert(`IMC = ${imc}`);
+
+        }
+
+    </script>
+
+</body>
+</html>
